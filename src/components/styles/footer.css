@@ -1,0 +1,32 @@
+.footer-container {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  flex-direction:column;
+  align-items: center;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  font-family: "Fredoka One", cursive;
+  overflow: hidden;
+}
+
+.navigation-footer {
+    margin-top: 20px;
+
+}
+.navigation-footer {
+    color: white;
+    
+}
+.navigation-footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-footer ul li {
+    margin: 10px;
+}
+.navigation-footer ul li:hover {
+    color: orange;
+}

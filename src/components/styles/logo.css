@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.logo-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-main {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Fork and Spoon Icon */
+.icon-container {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  transform-style: preserve-3d;
+  animation: iconFloat 3s ease-in-out infinite;
+}
+
+.fork,
+.spoon {
+  position: absolute;
+  width: 12px;
+  border-radius: 6px;
+  transform-style: preserve-3d;
+}
+
+.fork {
+  height: 60px;
+  background: linear-gradient(180deg, #ff6b35 0%, #f7931e 50%, #ff6b35 100%);
+  left: 20px;
+  top: 10px;
+  transform: rotateY(-15deg) rotateX(10deg);
+  box-shadow: 4px 4px 0 #c44d1a, 8px 8px 0 #a33d12,
+    -2px 0 10px rgba(255, 107, 53, 0.5);
+}
+
+.fork::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -4px;
+  width: 20px;
+  height: 25px;
+  background: linear-gradient(180deg, #ff6b35 0%, #f7931e 100%);
+  border-radius: 3px 3px 0 0;
+  clip-path: polygon(
+    0 100%,
+    10% 0,
+    25% 0,
+    25% 70%,
+    40% 70%,
+    40% 0,
+    60% 0,
+    60% 70%,
+    75% 70%,
+    75% 0,
+    90% 0,
+    100% 100%
+  );
+  box-shadow: 4px 0 0 #c44d1a;
+}
+
+.spoon {
+  height: 55px;
+  background: linear-gradient(180deg, #2ecc71 0%, #27ae60 50%, #2ecc71 100%);
+  right: 20px;
+  top: 15px;
+  transform: rotateY(15deg) rotateX(10deg);
+  box-shadow: 4px 4px 0 #1e8449, 8px 8px 0 #145a32,
+    -2px 0 10px rgba(46, 204, 113, 0.5);
+}
+
+.spoon::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -9px;
+  width: 30px;
+  height: 28px;
+  background: linear-gradient(180deg, #2ecc71 0%, #27ae60 100%);
+  border-radius: 50%;
+  box-shadow: 4px 4px 0 #1e8449, inset -5px -5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 3D Text */
+.logo-text {
+  display: flex;
+  transform-style: preserve-3d;
+  perspective: 500px;
+}
+
+.crayo {
+  font-size: 72px;
+  font-weight: 700;
+  color: #ff6b35;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-shadow: 1px 1px 0 #f7931e, 2px 2px 0 #e8821d, 3px 3px 0 #d9711c,
+    4px 4px 0 #ca601b, 5px 5px 0 #bb4f1a, 6px 6px 0 #ac3e19,
+    7px 7px 15px rgba(0, 0, 0, 0.4);
+  transform: rotateX(10deg) rotateY(-5deg);
+  animation: textPulse 2s ease-in-out infinite alternate;
+}
+
+.eats {
+  font-size: 72px;
+  font-weight: 700;
+  color: #2ecc71;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-left: 15px;
+  text-shadow: 1px 1px 0 #27ae60, 2px 2px 0 #239b56, 3px 3px 0 #1e884c,
+    4px 4px 0 #1a7542, 5px 5px 0 #156238, 6px 6px 0 #104f2e,
+    7px 7px 15px rgba(0, 0, 0, 0.4);
+  transform: rotateX(10deg) rotateY(5deg);
+  animation: textPulse 2s ease-in-out infinite alternate-reverse;
+}
+
+/* Decorative elements */
+.circle-decor {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.circle-1 {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, #ff6b35 0%, transparent 70%);
+  top: -50px;
+  left: -80px;
+  animation: pulse 4s ease-in-out infinite;
+}
+
+.circle-2 {
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, #2ecc71 0%, transparent 70%);
+  bottom: -30px;
+  right: -50px;
+  animation: pulse 4s ease-in-out infinite reverse;
+}
+
+/* Tagline */
+.tagline {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-family: sans-serif;
+  font-weight: 300;
+}
+
+/* Plate decoration */
+.plate {
+  position: absolute;
+  bottom: -40px;
+  width: 350px;
+  height: 20px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 107, 53, 0.3) 20%,
+    rgba(46, 204, 113, 0.3) 80%,
+    transparent 100%
+  );
+  border-radius: 50%;
+  filter: blur(10px);
+}
+
+/* Animations */
+@keyframes iconFloat {
+  0%,
+  100% {
+    transform: translateY(0) rotateZ(-5deg);
+  }
+  50% {
+    transform: translateY(-10px) rotateZ(5deg);
+  }
+}
+
+@keyframes textPulse {
+  0% {
+    transform: rotateX(10deg) rotateY(-5deg) scale(1);
+  }
+  100% {
+    transform: rotateX(8deg) rotateY(-3deg) scale(1.02);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+}
+
+/* Shine effect */
+.logo-text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 150%;
+  }
+}

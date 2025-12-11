@@ -1,0 +1,75 @@
+Roles
+
+ROLES = {
+    "customer",
+    "dasher",
+    "merchant_admin",
+    "merchant_staff",
+    "system_admin"
+}
+
+Permissions
+
+PERMISSIONS = {
+    "order:create",
+    "order:view",
+    "order:update_status",
+    "menu:manage",
+    "user:manage",
+    "payouts:view",
+    "payouts:configure",
+    "delivery:accept",
+    "delivery:update_status",
+    "report:view",
+    "platform:admin"
+}
+
+
+Assign Permission
+ROLE_PERMISSIONS = {
+    "customer": [
+        "order:create",
+        "order:view"
+    ],
+
+    "dasher": [
+        "delivery:accept",
+        "delivery:update_status",
+        "payouts:view"
+    ],
+
+    "merchant_admin": [
+        "menu:manage",
+        "order:view",
+        "payouts:view",
+        "report:view",
+        "user:manage",
+        "order:update_status"
+    ],
+
+    "merchant_staff": [
+        "order:view",
+        "order:update_status",
+        "menu:manage"
+    ],
+
+    "system_admin": [
+        "*",   // Access to all permissions
+        "platform:admin"
+    ]
+}
+
+Check Access Function
+
+function canAccess(role, permission):
+    if role == "system_admin":
+        return true
+
+    return permission in ROLE_PERMISSIONS[role]
+
+Usage 
+if canAccess(user.role, "menu:manage"):
+    allow()
+else:
+    deny()
+

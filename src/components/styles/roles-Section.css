@@ -1,0 +1,29 @@
+.roles-section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 50px;
+}
+
+.roles-section div {
+    max-width: 33%;
+    padding: 25px
+}
+
+.roles-section img {
+    width: 200px;
+}
+
+.traveler-card img {
+    width:130px;
+}
+
+h2, p {
+    margin-bottom: 10px;
+    font-weight:bold;
+    color: #282c34;
+}
+
+a > p:hover{
+    color: orange;
+}

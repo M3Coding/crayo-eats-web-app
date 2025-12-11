@@ -1,23 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header.jsx"
+import Footer from "./components/Footer.jsx"
+import "./App.css"
+import RolesSection from "./components/Sign-Up-Roles.jsx"
+import RestaurantsSection from "./components/Restaurants-Section.jsx"
+import restaurants from "./components/RestaurantsList.jsx"
+import "./components/styles/restaurantssection.css"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <Header />
+      </div>
+      <div className="signUpRole">
+        <RolesSection />
+      </div>
+      <div className="featureRestaurants"></div>
+      <div className="restaurants">
+  <h1>Airport Restaurants</h1>
+
+  <div className="restaurant-section">
+    {restaurants.map((r, index) => (
+      <RestaurantsSection
+        key={index}
+        img={r.image}
+        name={r.name}
+        description={r.description}
+        order={r.order}
+      />
+    ))}
+  </div>
+</div>
+      
+      <div>
+        <Footer />
+      </div>
+      
+      
     </div>
   );
 }

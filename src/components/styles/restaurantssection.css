@@ -1,0 +1,18 @@
+.restaurant-section {
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    flex-wrap: wrap;
+    /*border: 1px solid;*/
+}
+
+
+.restaurant-card {
+    width: 300px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.restaurant-card img {
+    width: 150px;
+}
