@@ -1,0 +1,52 @@
+.get-started-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    text-align: right;
+     background: white;              /* gives it a card look */
+    border-radius: 12px;            /* smooth corners */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);  /* the shadow */
+
+    margin-bottom: 70px;
+
+}
+.get-started-container div {
+
+    max-width: 400px;
+
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+
+.get-started-container img {
+    width: 500px;
+    height: auto;
+    border-radius: 15px 50px
+
+}
+
+.get-started-container a {
+    background: orange;
+    border-radius: 15px 15px;
+    color: green;
+    padding: 12px 24px;
+    text-decoration: none;
+    display: inline-block;
+    
+    font-size: 1rem;
+    font-weight: 600;  
+    
+    
+}
+
+.get-started-container a:hover {
+    background: green;
+    color: orange;
+    cursor: pointer;
+    
+    
+}

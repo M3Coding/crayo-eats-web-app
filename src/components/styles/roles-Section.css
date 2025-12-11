@@ -7,7 +7,16 @@
 
 .roles-section div {
     max-width: 33%;
-    padding: 25px
+    padding: 25px ;
+    transition: 0.3s;
+    background: white;              /* gives it a card look */
+    border-radius: 12px;            /* smooth corners */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);  /* the shadow */
+}
+
+.roles-section div:hover {
+    box-shadow: 0 20px 28px rgba(0, 0, 0, 0.32);
+  transform: translateY(-4px);
 }
 
 .roles-section img {
@@ -24,6 +33,7 @@ h2, p {
     color: #282c34;
 }
 
-a > p:hover{
+a > p:hover {
     color: orange;
+    cursor: pointer;
 }
