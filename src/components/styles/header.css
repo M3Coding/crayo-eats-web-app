@@ -13,20 +13,22 @@
     margin-top: 20px;
 
 }
-.navigation {
+.navigation a {
+    margin-top: 20px;
     color: white;
     
 }
-.navigation ul {
+.navigation a {
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.navigation ul li {
+.navigation a{
     margin: 10px;
 }
-.navigation ul li:hover {
+.navigation a:hover {
     color: orange;
+    cursor: pointer;
 }
