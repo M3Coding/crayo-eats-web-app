@@ -7,13 +7,10 @@ function Restaurant() {
         <h1>Airport Restaurants</h1>
 
         <div className="restaurant-section">
-          {restaurantsList.map((r, index) => (
+          {restaurantsList.map((r) => (
             <RestaurantsSection
-              key={index}
-              img={r.image}
-              name={r.name}
-              description={r.description}
-              order={r.order}
+              key={r.id}
+              restaurant={r}
             />
           ))}
         </div>

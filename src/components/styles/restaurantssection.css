@@ -1,18 +1,52 @@
 .restaurant-section {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap:30px;
     flex-wrap: wrap;
     /*border: 1px solid;*/
 }
 
-
-.restaurant-card {
+h1 {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.restaurant-card div {
     width: 300px;
     padding: 10px;
     margin: 20px;
+   
+
+}
+.restaurant-card:hover {
+    box-shadow: 0 20px 28px rgba(0, 0, 0, 0.32);
+  transform: translateY(-4px);
+   border-radius: 15px 15px;
+   height: 400px;
 }
 
 .restaurant-card img {
     width: 150px;
+}
+.restaurant-section a {
+    background: orange;
+    border-radius: 15px 15px;
+    color: green;
+    padding: 5px 8px;
+    text-decoration: none;
+    display: inline-block;
+    
+    font-size: 1rem;
+    font-weight: 600;  
+    
+    
+}
+
+.restaurant-section a:hover {
+    background: green;
+    color: orange;
+    cursor: pointer;
+    
+    
 }
