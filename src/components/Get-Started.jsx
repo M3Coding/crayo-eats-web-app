@@ -4,7 +4,7 @@ function GetStarted() {
   return (
     <div className="get-started-container">
       <div>
-        <img src="/images/transporter1.png" />
+        <img src="/images/blacktraveler.jpg" />
       </div>
       <div classname="get-started-text">
         <div></div>

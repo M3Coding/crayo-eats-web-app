@@ -11,7 +11,7 @@ function AboutUs() {
             </div>
             
             <div>
-                <img src="/images/logo.jpg" />
+                <img src="/images/restaurants.jpg" />
             </div>
         </div>
         
