@@ -4,9 +4,9 @@
     align-items: center;
     margin: 20px;
     text-align: right;
-     background: white;              /* gives it a card look */
-    border-radius: 12px;            /* smooth corners */
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);  /* the shadow */
+     background: white;             
+    border-radius: 12px;          
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
 
     margin-bottom: 70px;
 

@@ -1,0 +1,72 @@
+.restaurant-header-container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;         
+    border-radius: 12px;           
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap:10px;
+
+}
+
+.logo-section img {
+    width:75px;
+}
+.middle-section-navigation .nav-link {
+    padding: 10px;
+    text-decoration: none;
+    color: grey;
+}
+.middle-section-navigation .nav-link:hover {
+    color: green;
+    cursor:pointer;
+    box-shadow: 0 20px 28px rgba(0, 0, 0, 0.32);
+    transform: translateY(-4px);
+    border-radius: 15px 15px;
+    height: 400px;
+}
+
+.end-section-navigation .nav-link1 {
+    padding: 10px;
+    text-decoration: none;
+
+}
+
+.cart {
+    border: 1px solid grey;
+    border-radius: 15px 15px;
+    margin-right: 10px;
+    color: black;
+}
+
+.cart:hover{
+    color: green;
+    background: orange;
+    cursor:pointer;
+    box-shadow: 0 20px 28px rgba(0, 0, 0, 0.32);
+    transform: translateY(-4px);
+    border-radius: 15px 15px;
+    height: 400px;
+}
+
+.order{
+    background: green;
+    color: orange;
+    border-radius: 15px 15px;
+
+}
+
+.order:hover {
+    background:orange;
+    color:green;
+    cursor:pointer;
+    box-shadow: 0 20px 28px rgba(0, 0, 0, 0.32);
+    transform: translateY(-4px);
+    border-radius: 15px 15px;
+    height: 400px;
+}
