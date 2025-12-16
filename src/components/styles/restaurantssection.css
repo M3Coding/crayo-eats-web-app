@@ -4,7 +4,73 @@
     align-items: center;
     gap:30px;
     flex-wrap: wrap;
-    /*border: 1px solid;*/
+    margin-bottom: 50px;
+}
+
+.hero-section-text {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+    gap:10px;
+    
+}
+
+.hero-section-airport-name{
+    background: #f4e6c1;
+    border-radius: 15px 15px;
+    width: 390px;
+    padding: 8px;
+    margin-top: 50px;
+
+}
+
+.top-h1, .bottom-h1 {
+    font-size:68px;
+    font-weight: bold;
+}
+
+.bottom-h1 {
+    color: orange;
+}
+.hero-section-intro {
+    color: grey;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: normal;
+}
+.hero-section-search {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    gap:10px;
+    background: white;             
+    border-radius: 12px;          
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+    margin-right: 25%;
+    margin-left: 25%;
+    padding: 20px;
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+.hero-section-search input {
+    width:60%;
+    padding:10px;
+    border-radius: 15px 15px;
+    border: 1px solid grey;
+    
+    background: white;             
+    border-radius: 12px;          
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+
+}
+
+.hero-section-search input:hover {
+    box-shadow: 0 20px 28px rgba(0, 0, 0, 0.32);
+  transform: translateY(-4px);
+
 }
 
 h1 {
@@ -12,41 +78,56 @@ h1 {
     align-items: center;
     justify-content: center;
 }
-.restaurant-card div {
-    width: 300px;
-    padding: 10px;
-    margin: 20px;
-   
+.restaurant-title-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px; 
 
 }
-.restaurant-card:hover {
-    box-shadow: 0 20px 28px rgba(0, 0, 0, 0.32);
-  transform: translateY(-4px);
-   border-radius: 15px 15px;
-   height: 400px;
+.restaurants-title2 {
+    color: orange;
+}
+.restaurant-card {
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 20px 28px rgba(0, 0, 0, 0.1);
+    border-radius: 15px 15px;
+    height: 500px;
+
+}
+
+.restaurant-card p {
+    font-weight: normal;
+    color: grey;
+}
+.restaurant-card:hover img{
+  transform: translate(5px, -5px);
+   
 }
 
 .restaurant-card img {
-    width: 150px;
+    width: 100%;
+    height:53%;
+    overflow: hidden;
+  
 }
-.restaurant-section a {
+.restaurant-section button {
     background: orange;
     border-radius: 15px 15px;
     color: green;
     padding: 5px 8px;
-    text-decoration: none;
+    border: none;
     display: inline-block;
-    
     font-size: 1rem;
     font-weight: 600;  
     
     
 }
 
-.restaurant-section a:hover {
+.restaurant-section button:hover {
     background: green;
     color: orange;
     cursor: pointer;
-    
-    
 }

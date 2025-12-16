@@ -1,7 +1,7 @@
 const restaurantsList = [
     {
         id: 1, 
-        image:"./images/auntieannes.png",
+        image:"./images/auntieannes.jpg",
         name: "Auntie Annie's" ,
         description: "Satisfy your cravings with a freshly-made and baked soft pretzel and thirst-quenching lemonade.",
         order: [
@@ -13,7 +13,7 @@ const restaurantsList = [
     },
     {
         id: 2, 
-        image:"./images/burgerking.png",
+        image:"./images/burger-king.png",
         name: "Burger King" ,
         description: "Choose from hamburgers, fries, and more at this famous American fast food chain.",
         order:[
@@ -25,7 +25,7 @@ const restaurantsList = [
     },
     {
         id: 3, 
-        image:"./images/greatamericanbagel.png",
+        image:"./images/greatamericanbagel.jpg",
         name: "Great American Bagel",
         description: "The ideal stop for breakfast or lunch, offering specialty bagels, sandwiches, and coffees.",
         order: [
@@ -37,7 +37,7 @@ const restaurantsList = [
     },
     {
         id: 4, 
-        image:"./images/leopold.png",
+        image:"./images/leopold.jpg",
         name: "Leopold's Ice Cream",
         description: "Indulge in a classic, sweet treat from this famous Savannah ice cream shop.",
         order: [
@@ -49,7 +49,7 @@ const restaurantsList = [
     },
     {
         id: 5, 
-        image:"./images/pga_transparent.png",
+        image:"./images/pga.jpg",
         name: "PGA Tour Grill",
         description: "Sit down and enjoy classic Southern cuisine before you take off.",
         order: [
@@ -61,7 +61,7 @@ const restaurantsList = [
     },
     {
         id: 6, 
-        image:"./images/service.png",
+        image:"./images/servicestation.jpg",
         name: "Service Station Bar",
         description: "Enjoy craft beers on tap, specialty cocktails, and a selection of wines before taking off on your next adventure with Savannah’s own Service Station.",
         order: [
@@ -73,7 +73,7 @@ const restaurantsList = [
     },
     {
         id: 7, 
-        image:"./images/starbucks.png",
+        image:"./images/starbucks.jpg",
         name: "Starbucks",
         description: "Enjoy genuine service, an inviting atmosphere and a superb cup of expertly roasted and richly brewed coffee while you wait for takeoff!",
         order: [
@@ -97,7 +97,7 @@ const restaurantsList = [
     },
     {
         id: 9, 
-        image:"./images/tornbasil.png",
+        image:"./images/torn.jpg",
         name: "Torn Basil Pizzeria",
         description: "Grab a slice on the fly with Torn Basil Pizzeria individual pizzas.",
         order: [
