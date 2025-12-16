@@ -28,4 +28,5 @@
 }
 .navigation-footer ul li:hover {
     color: orange;
+    cursor: pointer;
 }

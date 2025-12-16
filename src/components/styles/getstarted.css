@@ -36,13 +36,14 @@ h1 {
 
 }
 
-.get-started-container a {
+.get-started-container button {
     background: orange;
     border-radius: 15px 15px;
     color: green;
     padding: 12px 24px;
     text-decoration: none;
     display: inline-block;
+    border:none;
     
     font-size: 1rem;
     font-weight: 600;  
@@ -50,7 +51,7 @@ h1 {
     
 }
 
-.get-started-container a:hover {
+.get-started-container button:hover {
     background: green;
     color: orange;
     cursor: pointer;

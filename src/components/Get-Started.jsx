@@ -1,6 +1,9 @@
 import "./styles/getstarted.css";
+import { useNavigate } from "react-router-dom";
+
 
 function GetStarted() {
+  const navigate = useNavigate();
   return (
     <div className="get-started-container">
       <div>
@@ -16,7 +19,7 @@ function GetStarted() {
           are one click away...
         </p>
         <div classname="get-started-button">
-          <a>Get Started</a>
+          <button onClick={() => navigate(`/Restaurants`)}>Get Started</button>
         </div>
       </div>
     </div>
