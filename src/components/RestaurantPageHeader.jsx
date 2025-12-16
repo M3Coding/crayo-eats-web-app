@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import "./styles/restaurantpagesheader.css";
 
 const RestaurantPageHeader = () => {
@@ -10,8 +11,8 @@ const RestaurantPageHeader = () => {
             </div>
             <div className="middle-section-navigation">
 
-                <Link to="" className="nav-link">Home</Link>
-                <Link to="" className="nav-link">Restaurants</Link>
+                <Link to="/" className="nav-link">Home</Link>
+                <HashLink smooth to="/#restaurant-section" className="nav-link">Restaurants</HashLink>
                 <Link to="" className="nav-link">How It Works</Link>
                 
                 

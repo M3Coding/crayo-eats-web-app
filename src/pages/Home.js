@@ -4,6 +4,8 @@ import GetStarted from "../components/Get-Started.jsx"
 import Terminal from "../components/Terminal.jsx";
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
+import "./styles/home.css"
+import HowItWorks from "../components/HowItWorks.jsx";
 
 function Home() {
   return (
@@ -23,7 +25,9 @@ function Home() {
       <div>
         <Terminal />
       </div>
-      <div className="featureRestaurants"></div>
+      <div>
+        <HowItWorks />
+      </div>
       <div>
         <Footer />
       </div>

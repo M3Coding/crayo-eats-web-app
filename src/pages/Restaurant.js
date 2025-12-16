@@ -3,8 +3,11 @@ import restaurantsList from "../components/RestaurantsList.jsx";
 import "../components/styles/restaurantssection.css";
 import RestaurantPageHeader from "../components/RestaurantPageHeader.jsx";
 import RestaurantPageFooter from "../components/RestaurantPageFooter.jsx";
+import HowItWorks from "../components/HowItWorks.jsx"
+
 
 function Restaurant() {
+  
   
     return (
         <div className="restaurants">
@@ -27,7 +30,7 @@ function Restaurant() {
             <h1 className="restaurants-title1">Available</h1>
             <h1 className="restaurants-title2">Restaurants</h1>
           </div>
-        <div className="restaurant-section">
+        <div className="restaurant-section" id="restaurant-section">
           {restaurantsList.map((r) => (
             <RestaurantsSection
               key={r.id}
@@ -35,13 +38,11 @@ function Restaurant() {
             />
           ))}
         </div>
-        <div className="how">
-          <h1>How It Works...</h1>
-          <h3>Getting your favorite airport meal delivered is easier than catching your flight</h3>
-          
-          
-          
-
+        <div >
+          <HowItWorks />
+        </div>
+        <div>
+          <RestaurantPageFooter />
         </div>
       </div>
 

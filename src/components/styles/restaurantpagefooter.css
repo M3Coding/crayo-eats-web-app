@@ -1,0 +1,72 @@
+.restaurant-footer-container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 1);         
+    border-radius: 12px;           
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+    position:sticky;
+    top:0;
+    width:100%;
+    z-index: 1000;
+    
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap:10px;
+
+}
+
+.logo-section img {
+    width:75px;
+}
+.middle-section-navigation .nav-link {
+    padding: 10px;
+    text-decoration: none;
+    color: grey;
+}
+.middle-section-navigation .nav-link:hover {
+    color: green;
+    cursor:pointer;
+    box-shadow: 0 20px 28px rgba(0, 0, 0, 0.32);
+    transform: translateY(-4px);
+    border-radius: 15px 15px;
+    height: 400px;
+}
+
+.end-section-navigation .nav-link1 {
+    padding: 10px;
+    text-decoration: none;
+
+}
+
+.facebook img{
+    width: 50px;
+}
+
+.cart:hover{
+    color: green;
+    background: orange;
+    cursor:pointer;
+    box-shadow: 0 20px 28px rgba(0, 0, 0, 0.32);
+    transform: translateY(-4px);
+    border-radius: 15px 15px;
+    height: 400px;
+}
+
+.tiktok img{
+    width: 50px;
+
+}
+
+.order:hover {
+    background:orange;
+    color:green;
+    cursor:pointer;
+    box-shadow: 0 20px 28px rgba(0, 0, 0, 0.32);
+    transform: translateY(-4px);
+    border-radius: 15px 15px;
+    height: 400px;
+}

@@ -1,3 +1,4 @@
+
 .menu-container {
     display: flex;
     justify-content: center;
@@ -5,4 +6,75 @@
     gap:30px;
     flex-wrap: wrap;
     /*border: 1px solid;*/
+}
+
+.menu-item {
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 20px 28px rgba(0, 0, 0, 0.1);
+    border-radius: 15px 15px;
+    height: 420px;
+    border-radius: 15px 15px;
+
+}
+
+.menu-item img {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px 15px;
+}
+.menu-item p{
+    text-align: end;
+    font-size: 20px;
+    font-weight: bold;
+    color:seagreen
+}
+
+.menu-item:hover{
+  box-shadow: 0 20px 28px rgba(0, 0, 0, 0.32);
+  transform: translateY(-4px);
+   
+}
+
+.menu-item button {
+    background: orange;
+    border-radius: 15px 15px;
+    color: green;
+    padding: 5px 8px;
+    border: none;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600; 
+    width: 100%;
+}
+.menu-item button:hover {
+    background: green;
+    cursor: pointer;
+    color: orange;
+}
+
+.back-link {
+    margin-bottom: 20px;
+}
+.back-link a {
+    color: green;
+    
+}
+.back-link a:hover {
+    color: orange;
+}
+
+.restaurant-banner {
+    max-width: 90%;
+    margin: 0 auto; 
+    padding: 0 0; 
+    
+}
+.restaurant-banner img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 12px; 
+    display: block;
 }

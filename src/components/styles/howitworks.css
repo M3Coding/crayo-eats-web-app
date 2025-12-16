@@ -1,0 +1,95 @@
+.how-container {
+    background: whitesmoke;
+    border-radius: 12px;           
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+    
+
+}
+.how-title{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 38px;
+}
+.second-how-title{
+    color: orange;
+}
+
+.how-description {
+    color: grey;
+    font-size: 20px;
+    font-weight:lighter;
+    display: flex;
+    justify-content: center;
+
+}
+
+.how-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding:20px;
+    gap:20px;
+    text-align: center;
+    
+}
+
+.how-card{
+    padding: 50px;
+    background: rgba(255, 255, 255, 1);         
+    border-radius: 12px;           
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+    margin-bottom: 100px;
+}
+.how-card:hover{
+    box-shadow: 0 20px 28px rgba(0, 0, 0, 0.32);
+    transform: translateY(-4px);
+}
+
+.top-how-card {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    position: relative;
+    
+}
+.step-img {
+    background: green;
+    border-radius: 15px;
+    padding:10px;
+    left:50%;
+    transform: translateX(110%);
+    
+
+}
+.step-img img {
+    filter:brightness(0) invert(1);
+}
+.step-number {
+    margin-left: 10%;
+    text-align: center;
+    background: orange;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    left:50%;
+    transform: translate(100%, -100%);
+    
+}
+.step-number p {
+    margin-top: 5px;
+}
+.top-how-card img {
+    width: 50px;
+}
+
+.bottom-how-card {
+    text-align: center;
+}
+
+.bottom-how-card p {
+    color: grey;
+    font-weight: normal;
+}

@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 function RestaurantsSection ({ restaurant }) {
     const navigate = useNavigate();
     return (
-        <div className="restaurant-section">
+        <div className="restaurant-section" id="restaurants">
             
             <div className="restaurant-card">
                 <img src={restaurant.image}/>
