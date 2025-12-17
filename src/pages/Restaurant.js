@@ -26,11 +26,11 @@ function Restaurant() {
             </div>
             <div className="hero-section-hours"></div>
           </div>
-          <div className="restaurant-title-container">
+          <div className="restaurant-title-container" id="restaurant-section">
             <h1 className="restaurants-title1">Available</h1>
             <h1 className="restaurants-title2">Restaurants</h1>
           </div>
-        <div className="restaurant-section" id="restaurant-section">
+        <div className="restaurant-section" >
           {restaurantsList.map((r) => (
             <RestaurantsSection
               key={r.id}
@@ -38,7 +38,7 @@ function Restaurant() {
             />
           ))}
         </div>
-        <div >
+        <div id="how" >
           <HowItWorks />
         </div>
         <div>

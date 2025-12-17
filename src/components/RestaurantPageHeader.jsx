@@ -12,8 +12,9 @@ const RestaurantPageHeader = () => {
             <div className="middle-section-navigation">
 
                 <Link to="/" className="nav-link">Home</Link>
-                <HashLink smooth to="/#restaurant-section" className="nav-link">Restaurants</HashLink>
-                <Link to="" className="nav-link">How It Works</Link>
+                <HashLink smooth to="#restaurant-section" className="nav-link">Restaurants</HashLink>
+                <HashLink smooth to="#how" className="nav-link">How It Works</HashLink>
+               
                 
                 
             </div>

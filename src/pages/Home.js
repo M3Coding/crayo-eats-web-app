@@ -16,16 +16,16 @@ function Home() {
       <div className="signUpRole">
         <RolesSection />
       </div>
-      <div>
+      <div id="about">
         <AboutUs />
       </div>
-      <div>
+      <div id="getstart">
         <GetStarted />
       </div>
-      <div>
+      <div id="terminal">
         <Terminal />
       </div>
-      <div>
+      <div id="how">
         <HowItWorks />
       </div>
       <div>
