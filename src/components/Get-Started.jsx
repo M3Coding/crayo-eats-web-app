@@ -13,7 +13,7 @@ function GetStarted() {
         <div></div>
         <h1>What Are You Waiting On?</h1>
         <h2>Aren't You Tire But Hungry...</h2>
-        <p>
+        <p style={{fontWeight:400}}>
           Click the Button below to start ordering from the restaurants in the
           Savannah Airport. Our Transporters are hear ready to serve you. You
           are one click away...
