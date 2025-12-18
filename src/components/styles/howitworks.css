@@ -5,6 +5,9 @@
     
 
 }
+.how-container > div {
+    width: 100%;
+}
 .how-title{
     display: flex;
     justify-content: center;
@@ -42,6 +45,7 @@
     border-radius: 12px;           
     box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
     margin-bottom: 100px;
+    height: 300px;
 }
 .how-card:hover{
     box-shadow: 0 20px 28px rgba(0, 0, 0, 0.32);
@@ -59,13 +63,16 @@
     background: green;
     border-radius: 15px;
     padding:10px;
-    left:50%;
-    transform: translateX(110%);
+    margin: 0 auto;
+    position: relative;
+    left: 10%;
+    
     
 
 }
 .step-img img {
     filter:brightness(0) invert(1);
+    
 }
 .step-number {
     margin-left: 10%;
@@ -87,6 +94,7 @@
 
 .bottom-how-card {
     text-align: center;
+    width:350px;
 }
 
 .bottom-how-card p {
