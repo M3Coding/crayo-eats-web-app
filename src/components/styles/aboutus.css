@@ -34,21 +34,21 @@ h1 {
 
 }
 
-.about-us-container a {
+.about-us-container button {
     background: orange;
     border-radius: 15px 15px;
     color: green;
     padding: 12px 24px;
     text-decoration: none;
     display: inline-block;
-    
+    border: none;
     font-size: 1rem;
     font-weight: 600;  
     
     
 }
 
-.about-us-container a:hover {
+.about-us-container button:hover {
     background: green;
     color: orange;
     cursor: pointer;

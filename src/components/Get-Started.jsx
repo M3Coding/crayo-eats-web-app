@@ -18,7 +18,7 @@ function GetStarted() {
           Savannah Airport. Our Transporters are hear ready to serve you. You
           are one click away...
         </p>
-        <div classname="get-started-button">
+        <div className="get-started-button">
           <button onClick={() => navigate(`/Restaurants`)}>Get Started</button>
         </div>
       </div>
